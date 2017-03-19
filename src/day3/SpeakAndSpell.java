@@ -15,13 +15,18 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+speak("You Are Fat Man You Dumb You Stupid");
 		// 2. Catch the user's answer in a String
+String punko = JOptionPane.showInputDialog("What Do You Have To Say About That?");
 
 		// 3. If the user spelled the word correctly, speak "correct"
-
+if(punko.equalsIgnoreCase("heck off you hecker")){
+	speak("You Are A Big Meany");
+}
 		// 4. Otherwise say "wrong"
-
+else{
+	JOptionPane.showMessageDialog(null, "*The Person Who Just Said These Horrible Things Slaps You Across Your Shiny Face, And You Fall To The Ground Screaming In Pain*");
+}
 		// 5. repeat the process for other words
 		
 	}
